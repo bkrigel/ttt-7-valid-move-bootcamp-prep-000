@@ -1,12 +1,6 @@
 def valid_move?(board, index)
-  if board[index].to_i > 8
-    false
-  end
-  if (board[index].to_i <= 8) && (position_taken?(board, index) == false)
-    true
-  else (position_taken?(board, index) == true) 
-    false
-  end
+    if index.between?(0,8) && board[index] != nil
+    end
 end
 
 
@@ -19,4 +13,3 @@ def position_taken?(board, index)
     false
   end
 end
-
